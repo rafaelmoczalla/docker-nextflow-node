@@ -41,10 +41,6 @@ To install Docker Compose run the following commands.
     sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
     ```
 
-## Build the Node
-Currently to build the cluster you need to build the node images on your own. Run the command
-`docker build -t rafaelmoczalla/nextflow-node:1.0 .` to do so.
-
 ## Start/Stop the Cluster
 To start the cluster just run the following command in the same folder as the docker-compose file.
 
@@ -63,4 +59,4 @@ To start the workflow
 
 ## Building Custom Image for Cluster Nodes
 To build your custom image for the cluster nodes modify the `Dockerfile` and build the new image with the following command.
-`docker build -t rafaelmoczalla/docker-nextflow-node:1.0 .`
+`docker build -t rafaelmoczalla/docker-nextflow-node:latest .`
