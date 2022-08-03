@@ -25,18 +25,29 @@ To build your custom image for the cluster nodes modify the `Dockerfile` and bui
 
     `docker build -t rafaelmoczalla/docker-nextflow-node:latest .`
 
-## Start/Stop the Cluster
+## Start the Cluster
 To start the cluster just run the following command in the same folder as the docker-compose file.
 
     `docker-compose --project-name nextflow up --scale node=3`
 
 To change the number of nodes in the cluster replace 3 by the desired number of nodes.
 
-To stop the cluster run the following command in the same folder as the docker-compose file.
+To stop the cluster just press `ctrl+c`.
 
-    `docker-compose stop`
+## Start the Scientific Workflow
+To start the scientific workflow create a new client node run the workflow in cluster mode
 
-## Start the Workflow
-To start the workflow create a new client node run the workflow in cluster mode `docker run --interactive --tty --rm --network nextflow_default --volume nextflow_work:/work rafaelmoczalla/docker-nextflow-node nextflow run test.nf -process.executor ignite`
+    `docker run --interactive --tty --rm --network nextflow_default --volume nextflow_work:/work rafaelmoczalla/docker-nextflow-node nextflow run test.nf -process.executor ignite`
+
+## After a Scientific Workflow Run
+
+After a run of the workflow the volume needs to be cleaned as nextflow is not cleaning temporal data. We are doing it by deleting the volume with docker.
+
+    `docker volumes rm nextflow_work`
+
+To have a look on the temporal data & logs we can login to one of the nodes & inspect the `/work` folder.
+
+    `docker exec --interactive --tty nextflow-node-1 /bin/bash`
+    `cd work && ls`
 
 
