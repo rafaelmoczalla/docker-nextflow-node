@@ -1,17 +1,12 @@
 version: '3.8'
 services:
-  client:
-    image: rafaelmoczalla/docker-nextflow-node:latest
-    privileged: true
-    volumes:
-      - work:/work
-    network_mode: default
   node:
-    image: rafaelmoczalla/docker-nextflow-node:latest
-    command: "sh -c 'dockerd-entrypoint.sh & nextflow node'"
+    image: nextflow-node
+    command: "sh -c 'nextflow node'"
     privileged: true
     volumes:
       - work:/work
-    network_mode: default
 volumes:
   work:
+
+
