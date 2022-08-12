@@ -3,7 +3,7 @@ Author: Rafael Moczalla
 
 Create Date: 5 March 2021
 
-Last Update: 3 August 2022
+Last Update: 12 August 2022
 
 Tested with Docker in version 20.10.4 and Docker Compose in version 1.28.5 on Ubuntu 18.04.2 LTS.
 
