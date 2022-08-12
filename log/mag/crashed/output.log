@@ -1,0 +1,1066 @@
+09:04:52.446 [main] DEBUG nextflow.cli.Launcher - Oops .. not a valid $COLUMNS value: not a tty
+N E X T F L O W  ~  version 20.10.0
+Pulling nf-core/mag ...
+downloaded from https://github.com/nf-core/mag.git
+Launching `nf-core/mag` [fabulous_mccarthy] - revision: 485c3fa0ba [master]
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/mag v1.2.0
+----------------------------------------------------
+Pipeline Release  : master
+Run Name          : fabulous_mccarthy
+Input paths       : [[test_minigut, [https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R1.fastq.gz, https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_R2.fastq.gz]], [test_minigut_sample2, [https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R1.fastq.gz, https://github.com/nf-core/test-datasets/raw/mag/test_data/test_minigut_sample2_R2.fastq.gz]]]
+Data Type         : Paired-End
+Adapter forward   : AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+Adapter reverse   : AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+Mean quality      : 15
+Trimming quality  : 15
+Keep phix reads   : No
+PhiX reference    : /root/.nextflow/assets/nf-core/mag/assets/data/GCA_002596845.1_ASM259684v1_genomic.fna.gz
+Centrifuge Db     : https://github.com/nf-core/test-datasets/raw/mag/test_data/minigut_cf.tar.gz
+Kraken2 Db        : https://github.com/nf-core/test-datasets/raw/mag/test_data/minigut_kraken.tgz
+Skip_krona        : Yes
+Skip binning      : No
+Binning mapping mode: group
+Min contig size   : 1500
+Min length unbinned contigs: 1
+Max unbinned contigs: 2
+Skip busco        : No
+Busco Reference   : https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+Co-assemble group : No
+Skip spades       : No
+Skip spadeshybrid : No
+Skip megahit      : No
+Skip quast        : No
+MEGAHIT fix cpus  : No
+SPAdes fix cpus   : No
+MetaBAT2 RNG seed : 1
+Max Resources     : 6 GB memory, 2 cpus, 2d time per job
+Container         : docker - nfcore/mag:1.2.0
+Output dir        : ./results
+Launch dir        : /
+Working dir       : /work
+Script dir        : /root/.nextflow/assets/nf-core/mag
+User              : root
+Config Profile    : test,docker
+Config Profile Description: Minimal test dataset to check pipeline function
+Config Files      : /root/.nextflow/assets/nf-core/mag/nextflow.config
+----------------------------------------------------
+[-        ] process > get_busco_version     -
+[-        ] process > get_software_versions -
+
+[-        ] process > get_busco_version        -
+[-        ] process > get_software_versions    -
+[-        ] process > rename_short_read_fastqs -
+[-        ] process > fastqc_raw               -
+[-        ] process > fastp                    -
+[-        ] process > host_bowtie2index        -
+[-        ] process > remove_host              -
+
+[-        ] process > get_busco_version        [  0%] 0 of 1
+[-        ] process > get_software_versions    -
+[-        ] process > rename_short_read_fastqs -
+[-        ] process > fastqc_raw               -
+[-        ] process > fastp                    -
+[-        ] process > host_bowtie2index        -
+[-        ] process > remove_host              -
+[-        ] process > phix_download_db         -
+[-        ] process > remove_phix              -
+[-        ] process > fastqc_trimmed           -
+
+[-        ] process > get_busco_version         [  0%] 0 of 1
+[-        ] process > get_software_versions     -
+[-        ] process > rename_short_read_fastqs  -
+[-        ] process > fastqc_raw                -
+[-        ] process > fastp                     -
+[-        ] process > host_bowtie2index         -
+[-        ] process > remove_host               -
+[-        ] process > phix_download_db          [  0%] 0 of 1
+[-        ] process > remove_phix               -
+[-        ] process > fastqc_trimmed            -
+[-        ] process > porechop                  -
+[-        ] process > nanolyse                  -
+[-        ] process > filtlong                  -
+[-        ] process > nanoplot                  -
+[-        ] process > centrifuge_db_preparation -
+
+[-        ] process > get_busco_version         [  0%] 0 of 1
+[-        ] process > get_software_versions     -
+[-        ] process > rename_short_read_fastqs  -
+[-        ] process > fastqc_raw                -
+[-        ] process > fastp                     -
+[-        ] process > host_bowtie2index         -
+[-        ] process > remove_host               -
+[-        ] process > phix_download_db          [  0%] 0 of 1
+[-        ] process > remove_phix               -
+[-        ] process > fastqc_trimmed            -
+[-        ] process > porechop                  -
+[-        ] process > nanolyse                  -
+[-        ] process > filtlong                  -
+[-        ] process > nanoplot                  -
+[-        ] process > centrifuge_db_preparation -
+[-        ] process > centrifuge                -
+[-        ] process > kraken2_db_preparation    -
+[-        ] process > kraken2                   -
+[-        ] process > krona_db                  -
+[-        ] process > krona                     -
+[-        ] process > megahit                   -
+[-        ] process > spadeshybrid              -
+
+executor >  ignite (1)
+[dd/d9d3a0] process > get_busco_version         [  0%] 0 of 1
+[-        ] process > get_software_versions     -
+[-        ] process > rename_short_read_fastqs  -
+[-        ] process > fastqc_raw                -
+[-        ] process > fastp                     -
+[-        ] process > host_bowtie2index         -
+[-        ] process > remove_host               -
+[-        ] process > phix_download_db          [  0%] 0 of 1
+[-        ] process > remove_phix               -
+[-        ] process > fastqc_trimmed            -
+[-        ] process > porechop                  -
+[-        ] process > nanolyse                  -
+[-        ] process > filtlong                  -
+[-        ] process > nanoplot                  -
+[-        ] process > centrifuge_db_preparation -
+[-        ] process > centrifuge                -
+[-        ] process > kraken2_db_preparation    -
+[-        ] process > kraken2                   -
+[-        ] process > krona_db                  -
+[-        ] process > krona                     -
+[-        ] process > megahit                   -
+[-        ] process > spadeshybrid              -
+[-        ] process > spades                    -
+[-        ] process > quast                     -
+[-        ] process > bowtie2                   -
+
+executor >  ignite (2)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         -
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+
+executor >  ignite (2)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         -
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+
+executor >  ignite (2)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         -
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+
+executor >  ignite (2)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         -
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[-        ] process > output_documentation           -
+
+executor >  ignite (3)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         -
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (3)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[-        ] process > rename_short_read_fastqs       -
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[-        ] process > kraken2_db_preparation         [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (4)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[b4/a10f8f] process > rename_short_read_fastqs (t... [  0%] 0 of 1
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[-        ] process > centrifuge_db_preparation      -
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (6)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[b4/a10f8f] process > rename_short_read_fastqs (t... [  0%] 0 of 1
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (7)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [  0%] 0 of 2
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (7)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [  0%] 0 of 2
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[-        ] process > busco_db_preparation           -
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+Staging foreign file: https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [  0%] 0 of 2
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [  0%] 0 of 1
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [  0%] 0 of 1
+Staging foreign file: https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [  0%] 0 of 2
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [  0%] 0 of 1
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [  0%] 0 of 1
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+Staging foreign file: https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[b4/a10f8f] process > rename_short_read_fastqs (t... [ 50%] 1 of 2, failed: 1
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [  0%] 0 of 1
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [  0%] 0 of 1
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+Staging foreign file: https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+Execution cancelled -- Finishing pending tasks before exit
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[b4/a10f8f] process > rename_short_read_fastqs (t... [ 50%] 1 of 2, failed: 1
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+Staging foreign file: https://busco-data.ezlab.org/v4/data/lineages/bacteria_odb10.2020-03-06.tar.gz
+Execution cancelled -- Finishing pending tasks before exit
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [  0%] 0 of 1
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [100%] 2 of 2, failed: 1 ✘
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+
+
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [100%] 1 of 1 ✔
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [100%] 2 of 2, failed: 1 ✘
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [  0%] 0 of 1
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [100%] 1 of 1 ✔
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [100%] 2 of 2, failed: 1 ✘
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [100%] 1 of 1 ✔
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [100%] 1 of 1 ✔
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [100%] 2 of 2, failed: 1 ✘
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [100%] 1 of 1 ✔
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+-[nf-core/mag] Pipeline completed with errors-
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+
+executor >  ignite (8)
+[dd/d9d3a0] process > get_busco_version              [100%] 1 of 1 ✔
+[-        ] process > get_software_versions          -
+[dd/57e7ac] process > rename_short_read_fastqs (t... [100%] 2 of 2, failed: 1 ✘
+[-        ] process > fastqc_raw                     -
+[-        ] process > fastp                          -
+[-        ] process > host_bowtie2index              -
+[-        ] process > remove_host                    -
+[2e/432265] process > phix_download_db (GCA_00259... [100%] 1 of 1 ✔
+[-        ] process > remove_phix                    -
+[-        ] process > fastqc_trimmed                 -
+[-        ] process > porechop                       -
+[-        ] process > nanolyse                       -
+[-        ] process > filtlong                       -
+[-        ] process > nanoplot                       -
+[6c/145038] process > centrifuge_db_preparation (1)  [100%] 1 of 1, failed: 1 ✘
+[-        ] process > centrifuge                     -
+[c9/329a2d] process > kraken2_db_preparation (1)     [100%] 1 of 1, failed: 1 ✘
+[-        ] process > kraken2                        -
+[-        ] process > krona_db                       -
+[-        ] process > krona                          -
+[-        ] process > megahit                        -
+[-        ] process > spadeshybrid                   -
+[-        ] process > spades                         -
+[-        ] process > quast                          -
+[-        ] process > bowtie2                        -
+[-        ] process > metabat                        -
+[4c/f2d053] process > busco_db_preparation (bacte... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > busco                          -
+[-        ] process > busco_plot                     -
+[-        ] process > busco_summary                  -
+[-        ] process > quast_bins                     -
+[-        ] process > merge_quast_and_busco          -
+[-        ] process > cat_db                         -
+[-        ] process > cat                            -
+[-        ] process > multiqc                        -
+[50/25aaa1] process > output_documentation           [100%] 1 of 1, failed: 1 ✘
+-[nf-core/mag] Pipeline completed with errors-
+WARN: To render the execution DAG in the required format it is required to install Graphviz -- See http://www.graphviz.org for more info.
+Error executing process > 'output_documentation'
+
+Caused by:
+  Process `output_documentation` terminated with an error exit status (125)
+
+Command executed:
+
+  markdown_to_html.py output.md -o results_description.html
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-J00PxvwObftAM2fQ17G0wlNB: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/50/25aaa1b208615102b7a511175af6eb
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+

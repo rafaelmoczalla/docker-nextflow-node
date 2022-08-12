@@ -1,0 +1,890 @@
+12:32:34.119 [main] DEBUG nextflow.cli.Launcher - Oops .. not a valid $COLUMNS value: not a tty
+N E X T F L O W  ~  version 20.10.0
+Pulling nf-core/viralrecon ...
+downloaded from https://github.com/nf-core/viralrecon.git
+Launching `nf-core/viralrecon` [goofy_wescoff] - revision: 75a2f9763e [master]
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/viralrecon v1.1.0
+----------------------------------------------------
+Pipeline Release      : master
+Run Name              : goofy_wescoff
+Samplesheet           : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_amplicon.csv
+Protocol              : amplicon
+Amplicon Fasta File   : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/NC_045512.2/amplicon/nCoV-2019.artic.V1.primer.fasta
+Amplicon BED File     : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/NC_045512.2/amplicon/nCoV-2019.artic.V1.bed
+Amplicon Left Suffix  : _LEFT
+Amplicon Right Suffix : _RIGHT
+Viral Genome          : NC_045512.2
+Viral Fasta File      : https://github.com/nf-core/test-datasets/raw/viralrecon/genome/NC_045512.2/GCF_009858895.2_ASM985889v3_genomic.200409.fna.gz
+Viral GFF             : https://github.com/nf-core/test-datasets/raw/viralrecon/genome/NC_045512.2/GCF_009858895.2_ASM985889v3_genomic.200409.gff.gz
+Fastp Mean Qual       : 30
+Fastp Qual Phred      : 30
+Fastp Unqual % Limit  : 10
+Fastp Min Trim Length : 50
+Variant Calling Tools : varscan2,ivar,bcftools
+Min Mapped Reads      : 1000
+iVar Trim Min Len     : 20
+iVar Trim Min Qual    : 20
+iVar Trim Window      : 4
+Mpileup Depth         : 0
+Min Base Quality      : 20
+Min Read Depth        : 10
+Min Allele Freq       : 0.25
+Max Allele Freq       : 0.75
+Varscan2 Strand Filter: Yes
+Host Kraken2 DB       : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/kraken2/kraken2_hs22.tar.gz
+Host Kraken2 Name     : human
+Assembly Tools        : spades,metaspades,unicycler,minia
+Minia Kmer Size       : 31
+Max Resources         : 6 GB memory, 2 cpus, 2d time per job
+Container             : docker - nfcore/viralrecon:1.1.0
+Output dir            : ./results
+Publish dir mode      : copy
+Launch dir            : /
+Working dir           : /work
+Script dir            : /root/.nextflow/assets/nf-core/viralrecon
+User                  : root
+Config Profile        : test,docker
+Config Description    : Minimal test dataset to check pipeline function
+----------------------------------------------------
+[-        ] process > GUNZIP_FASTA -
+
+[-        ] process > GUNZIP_FASTA -
+[-        ] process > GUNZIP_GFF   -
+
+[-        ] process > GUNZIP_FASTA [  0%] 0 of 1
+[-        ] process > GUNZIP_GFF   -
+
+[6c/aff77d] process > GUNZIP_FASTA [  0%] 0 of 1
+[-        ] process > GUNZIP_GFF   [  0%] 0 of 1
+
+executor >  ignite (2)
+[6c/aff77d] process > GUNZIP_FASTA [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF   [  0%] 0 of 1
+
+executor >  ignite (2)
+[6c/aff77d] process > GUNZIP_FASTA      [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF        [  0%] 0 of 1
+[-        ] process > UNTAR_KRAKEN2_DB  -
+[-        ] process > CHECK_SAMPLESHEET -
+
+executor >  ignite (2)
+[6c/aff77d] process > GUNZIP_FASTA      [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF        [  0%] 0 of 1
+[-        ] process > UNTAR_KRAKEN2_DB  [  0%] 0 of 1
+[-        ] process > CHECK_SAMPLESHEET -
+
+executor >  ignite (3)
+[6c/aff77d] process > GUNZIP_FASTA      [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF        [  0%] 0 of 1
+[03/5d3244] process > UNTAR_KRAKEN2_DB  [  0%] 0 of 1
+[-        ] process > CHECK_SAMPLESHEET [  0%] 0 of 1
+
+executor >  ignite (4)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF                     [  0%] 0 of 1
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+
+executor >  ignite (4)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF                     [  0%] 0 of 1
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+
+executor >  ignite (4)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[2a/022a76] process > GUNZIP_GFF                     [  0%] 0 of 1
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+
+executor >  ignite (4)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (5)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (5)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (5)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (5)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[03/5d3244] process > UNTAR_KRAKEN2_DB               [100%] 1 of 1, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (6)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (6)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[-        ] process > get_software_versions          -
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+
+executor >  ignite (6)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[-        ] process > get_software_versions          [  0%] 0 of 1
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+Error executing process > 'CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)'
+
+Caused by:
+  Process `CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)` terminated with an error exit status (125)
+
+Command executed:
+
+  awk -F, '{if($1 != "" && $2 != "") {print $0}}' samplesheet_test_amplicon.csv > nonsra_id.csv
+  check_samplesheet.py nonsra_id.csv nonsra.samplesheet.csv
+  
+  awk -F, '{if($1 != "" && $2 == "" && $3 == "") {print $1}}' samplesheet_test_amplicon.csv > sra_id.list
+  if true && [ -s sra_id.list ]
+  then
+      fetch_sra_runinfo.py sra_id.list sra_run_info.tsv --platform ILLUMINA --library_layout SINGLE,PAIRED
+      sra_runinfo_to_samplesheet.py sra_run_info.tsv sra.samplesheet.csv
+  fi
+  
+  if [ -f nonsra.samplesheet.csv ]
+  then
+      head -n 1 nonsra.samplesheet.csv > samplesheet.valid.csv
+  else
+      head -n 1 sra.samplesheet.csv > samplesheet.valid.csv
+  fi
+  tail -n +2 -q *sra.samplesheet.csv >> samplesheet.valid.csv
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-a90OUEVR70uf18S9KlBR0imu: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/a1/7c34e9757392749432826480a2bf90
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+executor >  ignite (7)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 50%] 1 of 2, failed: 1...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[a4/77bf28] process > get_software_versions          [  0%] 0 of 1
+Execution cancelled -- Finishing pending tasks before exit
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+Error executing process > 'CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)'
+
+Caused by:
+  Process `CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)` terminated with an error exit status (125)
+
+Command executed:
+
+  awk -F, '{if($1 != "" && $2 != "") {print $0}}' samplesheet_test_amplicon.csv > nonsra_id.csv
+  check_samplesheet.py nonsra_id.csv nonsra.samplesheet.csv
+  
+  awk -F, '{if($1 != "" && $2 == "" && $3 == "") {print $1}}' samplesheet_test_amplicon.csv > sra_id.list
+  if true && [ -s sra_id.list ]
+  then
+      fetch_sra_runinfo.py sra_id.list sra_run_info.tsv --platform ILLUMINA --library_layout SINGLE,PAIRED
+      sra_runinfo_to_samplesheet.py sra_run_info.tsv sra.samplesheet.csv
+  fi
+  
+  if [ -f nonsra.samplesheet.csv ]
+  then
+      head -n 1 nonsra.samplesheet.csv > samplesheet.valid.csv
+  else
+      head -n 1 sra.samplesheet.csv > samplesheet.valid.csv
+  fi
+  tail -n +2 -q *sra.samplesheet.csv >> samplesheet.valid.csv
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-a90OUEVR70uf18S9KlBR0imu: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/a1/7c34e9757392749432826480a2bf90
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+
+executor >  ignite (7)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 67%] 2 of 3, failed: 2...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[a4/77bf28] process > get_software_versions          [  0%] 0 of 1
+Execution cancelled -- Finishing pending tasks before exit
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+[1a/310fb7] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (2)
+Error executing process > 'CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)'
+
+Caused by:
+  Process `CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)` terminated with an error exit status (125)
+
+Command executed:
+
+  awk -F, '{if($1 != "" && $2 != "") {print $0}}' samplesheet_test_amplicon.csv > nonsra_id.csv
+  check_samplesheet.py nonsra_id.csv nonsra.samplesheet.csv
+  
+  awk -F, '{if($1 != "" && $2 == "" && $3 == "") {print $1}}' samplesheet_test_amplicon.csv > sra_id.list
+  if true && [ -s sra_id.list ]
+  then
+      fetch_sra_runinfo.py sra_id.list sra_run_info.tsv --platform ILLUMINA --library_layout SINGLE,PAIRED
+      sra_runinfo_to_samplesheet.py sra_run_info.tsv sra.samplesheet.csv
+  fi
+  
+  if [ -f nonsra.samplesheet.csv ]
+  then
+      head -n 1 nonsra.samplesheet.csv > samplesheet.valid.csv
+  else
+      head -n 1 sra.samplesheet.csv > samplesheet.valid.csv
+  fi
+  tail -n +2 -q *sra.samplesheet.csv >> samplesheet.valid.csv
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-a90OUEVR70uf18S9KlBR0imu: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/a1/7c34e9757392749432826480a2bf90
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Unexpected error [ClosedByInterruptException]
+
+executor >  ignite (7)
+[6c/aff77d] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[1a/310fb7] process > GUNZIP_GFF                     [ 67%] 2 of 3, failed: 2...
+[ee/bac8d4] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[a1/7c34e9] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[a4/77bf28] process > get_software_versions          [  0%] 0 of 1
+Execution cancelled -- Finishing pending tasks before exit
+[2a/022a76] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (1)
+[03/5d3244] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (125) -- Execution is retried (1)
+[1a/310fb7] NOTE: Process `GUNZIP_GFF` terminated with an error exit status (125) -- Execution is retried (2)
+Error executing process > 'CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)'
+
+Caused by:
+  Process `CHECK_SAMPLESHEET (samplesheet_test_amplicon.csv)` terminated with an error exit status (125)
+
+Command executed:
+
+  awk -F, '{if($1 != "" && $2 != "") {print $0}}' samplesheet_test_amplicon.csv > nonsra_id.csv
+  check_samplesheet.py nonsra_id.csv nonsra.samplesheet.csv
+  
+  awk -F, '{if($1 != "" && $2 == "" && $3 == "") {print $1}}' samplesheet_test_amplicon.csv > sra_id.list
+  if true && [ -s sra_id.list ]
+  then
+      fetch_sra_runinfo.py sra_id.list sra_run_info.tsv --platform ILLUMINA --library_layout SINGLE,PAIRED
+      sra_runinfo_to_samplesheet.py sra_run_info.tsv sra.samplesheet.csv
+  fi
+  
+  if [ -f nonsra.samplesheet.csv ]
+  then
+      head -n 1 nonsra.samplesheet.csv > samplesheet.valid.csv
+  else
+      head -n 1 sra.samplesheet.csv > samplesheet.valid.csv
+  fi
+  tail -n +2 -q *sra.samplesheet.csv >> samplesheet.valid.csv
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  docker: error during connect: Post http://docker:2375/v1.24/containers/create?name=nxf-a90OUEVR70uf18S9KlBR0imu: dial tcp: lookup docker on 192.168.0.1:53: no such host.
+  See 'docker run --help'.
+
+Work dir:
+  /work/a1/7c34e9757392749432826480a2bf90
+
+Tip: you can replicate the issue by changing to the process work dir and entering the command `bash .command.run`
+Unexpected error [ClosedByInterruptException]
+Channel `workflow_summary` has been used twice as an input by process `MULTIQC` and another operator
+

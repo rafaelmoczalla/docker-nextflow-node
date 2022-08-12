@@ -1,0 +1,1692 @@
+11:08:47.617 [main] DEBUG nextflow.cli.Launcher - Oops .. not a valid $COLUMNS value: not a tty
+N E X T F L O W  ~  version 20.10.0
+Launching `nf-core/viralrecon` [focused_jennings] - revision: 75a2f9763e [master]
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/viralrecon v1.1.0
+----------------------------------------------------
+Pipeline Release      : master
+Run Name              : focused_jennings
+Samplesheet           : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_amplicon.csv
+Protocol              : amplicon
+Amplicon Fasta File   : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/NC_045512.2/amplicon/nCoV-2019.artic.V1.primer.fasta
+Amplicon BED File     : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/NC_045512.2/amplicon/nCoV-2019.artic.V1.bed
+Amplicon Left Suffix  : _LEFT
+Amplicon Right Suffix : _RIGHT
+Viral Genome          : NC_045512.2
+Viral Fasta File      : https://github.com/nf-core/test-datasets/raw/viralrecon/genome/NC_045512.2/GCF_009858895.2_ASM985889v3_genomic.200409.fna.gz
+Viral GFF             : https://github.com/nf-core/test-datasets/raw/viralrecon/genome/NC_045512.2/GCF_009858895.2_ASM985889v3_genomic.200409.gff.gz
+Fastp Mean Qual       : 30
+Fastp Qual Phred      : 30
+Fastp Unqual % Limit  : 10
+Fastp Min Trim Length : 50
+Variant Calling Tools : varscan2,ivar,bcftools
+Min Mapped Reads      : 1000
+iVar Trim Min Len     : 20
+iVar Trim Min Qual    : 20
+iVar Trim Window      : 4
+Mpileup Depth         : 0
+Min Base Quality      : 20
+Min Read Depth        : 10
+Min Allele Freq       : 0.25
+Max Allele Freq       : 0.75
+Varscan2 Strand Filter: Yes
+Host Kraken2 DB       : https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/genome/kraken2/kraken2_hs22.tar.gz
+Host Kraken2 Name     : human
+Assembly Tools        : spades,metaspades,unicycler,minia
+Minia Kmer Size       : 31
+Max Resources         : 6 GB memory, 2 cpus, 2d time per job
+Container             : docker - nfcore/viralrecon:1.1.0
+Output dir            : ./results
+Publish dir mode      : copy
+Launch dir            : /
+Working dir           : /work
+Script dir            : /root/.nextflow/assets/nf-core/viralrecon
+User                  : root
+Config Profile        : test,docker
+Config Description    : Minimal test dataset to check pipeline function
+----------------------------------------------------
+[-        ] process > GUNZIP_FASTA -
+
+[-        ] process > GUNZIP_FASTA -
+[-        ] process > GUNZIP_GFF   -
+
+[-        ] process > GUNZIP_FASTA      -
+[-        ] process > GUNZIP_GFF        -
+[-        ] process > UNTAR_KRAKEN2_DB  -
+[-        ] process > CHECK_SAMPLESHEET -
+
+[-        ] process > GUNZIP_FASTA      [  0%] 0 of 1
+[-        ] process > GUNZIP_GFF        -
+[-        ] process > UNTAR_KRAKEN2_DB  -
+[-        ] process > CHECK_SAMPLESHEET -
+
+[-        ] process > GUNZIP_FASTA      [  0%] 0 of 1
+[-        ] process > GUNZIP_GFF        [  0%] 0 of 1
+[-        ] process > UNTAR_KRAKEN2_DB  [  0%] 0 of 1
+[-        ] process > CHECK_SAMPLESHEET [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP     -
+[-        ] process > SRA_FASTQ_DUMP    -
+[-        ] process > CAT_FASTQ         -
+[-        ] process > FASTQC            -
+[-        ] process > FASTP             -
+[-        ] process > BOWTIE2_INDEX     -
+[-        ] process > MAKE_SNPEFF_DB    -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+
+executor >  ignite (4)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[-        ] process > get_software_versions          -
+
+executor >  ignite (5)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+
+executor >  ignite (5)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+
+executor >  ignite (6)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [  0%] 0 of 1
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (6)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (6)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (6)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[-        ] process > CAT_FASTQ                      -
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [  0%] 0 of 1
+
+executor >  ignite (8)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[dc/ae9727] process > CAT_FASTQ (SAMPLE3_SE)         [  0%] 0 of 3
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (9)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[dc/ae9727] process > CAT_FASTQ (SAMPLE3_SE)         [  0%] 0 of 3
+[-        ] process > FASTQC                         -
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (11)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [  0%] 0 of 2
+[-        ] process > FASTP                          -
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (13)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [  0%] 0 of 2
+[f5/378605] process > FASTP (SAMPLE1_PE)             [  0%] 0 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (13)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [  0%] 0 of 2
+[f5/378605] process > FASTP (SAMPLE1_PE)             [  0%] 0 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (13)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[0d/172884] process > FASTQC (SAMPLE2_PE)            [ 50%] 1 of 2
+[f5/378605] process > FASTP (SAMPLE1_PE)             [  0%] 0 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (13)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[f5/378605] process > FASTP (SAMPLE1_PE)             [  0%] 0 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (13)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[-        ] process > CUTADAPT                       -
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (14)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[10/a54a24] process > CUTADAPT (SAMPLE2_PE)          [  0%] 0 of 1
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (14)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [  0%] 0 of 1
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[10/a54a24] process > CUTADAPT (SAMPLE2_PE)          [  0%] 0 of 1
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+
+executor >  ignite (15)
+[fe/247e45] process > GUNZIP_FASTA                   [  0%] 0 of 1
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[-        ] process > BOWTIE2_INDEX                  -
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  -
+[10/a54a24] process > CUTADAPT (SAMPLE2_PE)          [  0%] 0 of 1
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+[eb/bba6b6] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (2) -- Execution is retried (1)
+
+executor >  ignite (16)
+[fe/247e45] process > GUNZIP_FASTA                   [100%] 1 of 1 ✔
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[a3/94bd57] process > BOWTIE2_INDEX (GCF_00985889... [  0%] 0 of 1
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[-        ] process > MAKE_BLAST_DB                  [  0%] 0 of 1
+[10/a54a24] process > CUTADAPT (SAMPLE2_PE)          [  0%] 0 of 1
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+[eb/bba6b6] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (2) -- Execution is retried (1)
+
+executor >  ignite (17)
+[fe/247e45] process > GUNZIP_FASTA                   [100%] 1 of 1 ✔
+[96/0acdbc] process > GUNZIP_GFF                     [  0%] 0 of 1
+[eb/bba6b6] process > UNTAR_KRAKEN2_DB               [ 50%] 1 of 2, failed: 1...
+[95/8c09da] process > CHECK_SAMPLESHEET (samplesh... [100%] 1 of 1 ✔
+[-        ] process > SRA_FASTQ_FTP                  -
+[-        ] process > SRA_FASTQ_DUMP                 -
+[9d/00cabf] process > CAT_FASTQ (SAMPLE1_PE)         [ 67%] 2 of 3
+[db/bde3b8] process > FASTQC (SAMPLE1_PE)            [100%] 2 of 2
+[ac/35caf3] process > FASTP (SAMPLE2_PE)             [ 50%] 1 of 2
+[a3/94bd57] process > BOWTIE2_INDEX (GCF_00985889... [  0%] 0 of 1
+[-        ] process > MAKE_SNPEFF_DB                 -
+[-        ] process > BOWTIE2                        -
+[-        ] process > SORT_BAM                       -
+[-        ] process > IVAR_TRIM                      -
+[-        ] process > PICARD_MARKDUPLICATES          -
+[-        ] process > PICARD_METRICS                 -
+[-        ] process > MOSDEPTH_GENOME                -
+[-        ] process > MOSDEPTH_AMPLICON              -
+[-        ] process > MOSDEPTH_AMPLICON_PLOT         -
+[-        ] process > SAMTOOLS_MPILEUP               -
+[-        ] process > VARSCAN2                       -
+[-        ] process > VARSCAN2_CONSENSUS             -
+[-        ] process > VARSCAN2_SNPEFF                -
+[-        ] process > VARSCAN2_QUAST                 -
+[-        ] process > IVAR_VARIANTS                  -
+[-        ] process > IVAR_CONSENSUS                 -
+[-        ] process > IVAR_SNPEFF                    -
+[-        ] process > IVAR_QUAST                     -
+[-        ] process > BCFTOOLS_VARIANTS              -
+[-        ] process > BCFTOOLS_CONSENSUS             -
+[-        ] process > BCFTOOLS_SNPEFF                -
+[-        ] process > BCFTOOLS_QUAST                 -
+[-        ] process > BCFTOOLS_ISEC                  -
+[6a/6eb3d9] process > MAKE_BLAST_DB (GCF_00985889... [  0%] 0 of 1
+[10/a54a24] process > CUTADAPT (SAMPLE2_PE)          [  0%] 0 of 1
+[-        ] process > KRAKEN2                        -
+[-        ] process > SPADES                         -
+[-        ] process > SPADES_BLAST                   -
+[-        ] process > SPADES_ABACAS                  -
+[-        ] process > SPADES_PLASMIDID               -
+[-        ] process > SPADES_QUAST                   -
+[-        ] process > SPADES_VG                      -
+[-        ] process > SPADES_SNPEFF                  -
+[-        ] process > METASPADES                     -
+[-        ] process > METASPADES_BLAST               -
+[-        ] process > METASPADES_ABACAS              -
+[-        ] process > METASPADES_PLASMIDID           -
+[-        ] process > METASPADES_QUAST               -
+[-        ] process > METASPADES_VG                  -
+[-        ] process > METASPADES_SNPEFF              -
+[-        ] process > UNICYCLER                      -
+[-        ] process > UNICYCLER_BLAST                -
+[-        ] process > UNICYCLER_ABACAS               -
+[-        ] process > UNICYCLER_PLASMIDID            -
+[-        ] process > UNICYCLER_QUAST                -
+[-        ] process > UNICYCLER_VG                   -
+[-        ] process > UNICYCLER_SNPEFF               -
+[-        ] process > MINIA                          -
+[-        ] process > MINIA_BLAST                    -
+[-        ] process > MINIA_ABACAS                   -
+[-        ] process > MINIA_PLASMIDID                -
+[-        ] process > MINIA_QUAST                    -
+[-        ] process > MINIA_VG                       -
+[-        ] process > MINIA_SNPEFF                   -
+[55/ebd8fe] process > get_software_versions          [  0%] 0 of 1
+[-        ] process > MULTIQC                        -
+[1e/376977] process > output_documentation           [100%] 1 of 1 ✔
+[eb/bba6b6] NOTE: Process `UNTAR_KRAKEN2_DB` terminated with an error exit status (2) -- Execution is retried (1)

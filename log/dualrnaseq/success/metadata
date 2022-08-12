@@ -1,0 +1,3 @@
+commit: 118d12b3b4ec870a81aa63eff3474351405a0b84
+cluster: NextFlowWithDockerCluster
+notes: started the collect script twice, both executions are in the out files

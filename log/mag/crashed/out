@@ -1,0 +1,300 @@
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.05%     300.8MiB / 31.36GiB   0.94%     11.4MB / 314kB   0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.78%     291.5MiB / 31.36GiB   0.91%     11.2MB / 260kB   0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     3.85%     348.2MiB / 31.36GiB   1.08%     11.2MB / 346kB   0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   190.19%   60.2MiB / 31.36GiB    0.19%     3.96kB / 0B      0B / 1.25MB   53
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.41%     300.9MiB / 31.36GiB   0.94%     11.4MB / 320kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.20%     291.6MiB / 31.36GiB   0.91%     11.2MB / 264kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     3.09%     348.3MiB / 31.36GiB   1.08%     11.2MB / 353kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   319.65%   167.5MiB / 31.36GiB   0.52%     5.58MB / 39.7kB   0B / 1.63MB   63
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.52%     301MiB / 31.36GiB     0.94%     11.4MB / 324kB   0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.14%     291.7MiB / 31.36GiB   0.91%     11.2MB / 271kB   0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     2.28%     348.4MiB / 31.36GiB   1.08%     11.2MB / 356kB   0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   285.32%   106.6MiB / 31.36GiB   0.33%     11MB / 52.9kB    0B / 12.2MB   59
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.35%     301.1MiB / 31.36GiB   0.94%     11.4MB / 331kB   0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     27.44%    291.8MiB / 31.36GiB   0.91%     11.2MB / 278kB   0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     2.00%     348.4MiB / 31.36GiB   1.08%     11.2MB / 363kB   0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   293.91%   225.8MiB / 31.36GiB   0.70%     11MB / 54.4kB    0B / 12.2MB   61
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     23.69%    301.3MiB / 31.36GiB   0.94%     11.4MB / 335kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.23%     291.9MiB / 31.36GiB   0.91%     11.2MB / 282kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     3.40%     348.4MiB / 31.36GiB   1.08%     11.2MB / 367kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   325.01%   328.9MiB / 31.36GiB   1.02%     11.1MB / 55.9kB   0B / 12.2MB   62
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.24%     301.2MiB / 31.36GiB   0.94%     11.4MB / 341kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.73%     291.9MiB / 31.36GiB   0.91%     11.2MB / 289kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     1.65%     348.5MiB / 31.36GiB   1.09%     11.2MB / 374kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   348.80%   352.6MiB / 31.36GiB   1.10%     13.5MB / 79.4kB   0B / 15.9MB   63
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.46%     301.4MiB / 31.36GiB   0.94%     11.4MB / 348kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     3.10%     292MiB / 31.36GiB     0.91%     11.2MB / 295kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     0.85%     348.5MiB / 31.36GiB   1.09%     11.2MB / 378kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   313.38%   544.4MiB / 31.36GiB   1.70%     13.5MB / 81.1kB   0B / 15.9MB   66
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.11%     301.5MiB / 31.36GiB   0.94%     11.4MB / 352kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.01%     292MiB / 31.36GiB     0.91%     11.3MB / 299kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     0.90%     348.5MiB / 31.36GiB   1.09%     11.2MB / 385kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   311.29%   665.8MiB / 31.36GiB   2.07%     13.5MB / 81.4kB   0B / 15.9MB   66
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.62%     301.4MiB / 31.36GiB   0.94%     11.5MB / 359kB   0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.15%     292.1MiB / 31.36GiB   0.91%     11.3MB / 303kB   0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     7.84%     348.6MiB / 31.36GiB   1.09%     11.2MB / 392kB   0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   351.19%   843MiB / 31.36GiB     2.62%     13.5MB / 82kB    0B / 15.9MB   65
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     7.47%     301.4MiB / 31.36GiB   0.94%     11.5MB / 363kB    0B / 5.73MB   124
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.21%     292.1MiB / 31.36GiB   0.91%     11.3MB / 310kB    0B / 10.5MB   123
+4fa31889f438   nextflowwithdockercluster_node_1     1.75%     348.7MiB / 31.36GiB   1.09%     11.2MB / 396kB    0B / 2.74MB   124
+e29b5ed93aa7   nextflowwithdockercluster_client_1   199.71%   1.002GiB / 31.36GiB   3.19%     13.8MB / 97.5kB   0B / 15.9MB   120
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O     PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     93.71%    311.4MiB / 31.36GiB   0.97%     11.6MB / 572kB   0B / 5.73MB   128
+d090d2a7b13e   nextflowwithdockercluster_node_3     62.51%    293.3MiB / 31.36GiB   0.91%     11.3MB / 361kB   0B / 10.5MB   125
+4fa31889f438   nextflowwithdockercluster_node_1     150.93%   379.4MiB / 31.36GiB   1.18%     11.9MB / 544kB   0B / 2.74MB   129
+e29b5ed93aa7   nextflowwithdockercluster_client_1   242.91%   1.11GiB / 31.36GiB    3.54%     14.3MB / 750kB   0B / 15.9MB   140
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O        PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     122.00%   326.8MiB / 31.36GiB   1.02%     11.8MB / 779kB   0B / 5.73MB      128
+d090d2a7b13e   nextflowwithdockercluster_node_3     79.60%    306.2MiB / 31.36GiB   0.95%     11.6MB / 607kB   0B / 10.5MB      127
+4fa31889f438   nextflowwithdockercluster_node_1     142.45%   371.3MiB / 31.36GiB   1.16%     12.1MB / 766kB   0B / 2.74MB      130
+e29b5ed93aa7   nextflowwithdockercluster_client_1   347.43%   1.127GiB / 31.36GiB   3.59%     14.8MB / 909kB   4.1kB / 15.9MB   151
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     255.54%   359MiB / 31.36GiB     1.12%     11.9MB / 884kB    0B / 5.73MB       154
+d090d2a7b13e   nextflowwithdockercluster_node_3     202.85%   370.8MiB / 31.36GiB   1.15%     11.6MB / 702kB    0B / 10.5MB       131
+4fa31889f438   nextflowwithdockercluster_node_1     114.79%   368.7MiB / 31.36GiB   1.15%     12.2MB / 852kB    0B / 2.74MB       130
+e29b5ed93aa7   nextflowwithdockercluster_client_1   192.18%   1.157GiB / 31.36GiB   3.69%     33.2MB / 1.22MB   12.3kB / 15.9MB   191
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     32.96%    347.7MiB / 31.36GiB   1.08%     11.9MB / 926kB   0B / 5.73MB       133
+d090d2a7b13e   nextflowwithdockercluster_node_3     4.17%     355.3MiB / 31.36GiB   1.11%     11.7MB / 734kB   0B / 10.5MB       127
+4fa31889f438   nextflowwithdockercluster_node_1     8.00%     370.2MiB / 31.36GiB   1.15%     12.3MB / 880kB   0B / 2.74MB       126
+e29b5ed93aa7   nextflowwithdockercluster_client_1   197.07%   1.177GiB / 31.36GiB   3.75%     101MB / 1.49MB   12.3kB / 16.2MB   208
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     36.89%    348.3MiB / 31.36GiB   1.08%     11.9MB / 933kB   0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.62%     354.9MiB / 31.36GiB   1.10%     11.7MB / 742kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     7.99%     368.7MiB / 31.36GiB   1.15%     12.3MB / 888kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   201.44%   1.211GiB / 31.36GiB   3.86%     223MB / 1.77MB   12.3kB / 16.2MB   225
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.86%     345.1MiB / 31.36GiB   1.07%     11.9MB / 937kB   0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     4.93%     354.9MiB / 31.36GiB   1.10%     11.7MB / 746kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.60%     364.4MiB / 31.36GiB   1.13%     12.3MB / 892kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   316.45%   1.228GiB / 31.36GiB   3.91%     431MB / 2.19MB   12.3kB / 16.4MB   225
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.85%     345.4MiB / 31.36GiB   1.08%     12MB / 945kB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     6.13%     354.7MiB / 31.36GiB   1.10%     11.7MB / 754kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     5.58%     364.7MiB / 31.36GiB   1.14%     12.3MB / 900kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   303.07%   1.229GiB / 31.36GiB   3.92%     563MB / 2.45MB   12.3kB / 16.9MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.08%     345.7MiB / 31.36GiB   1.08%     12MB / 949kB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.63%     354.7MiB / 31.36GiB   1.10%     11.7MB / 758kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.09%     364.6MiB / 31.36GiB   1.14%     12.3MB / 904kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   272.99%   1.249GiB / 31.36GiB   3.98%     731MB / 2.77MB   12.3kB / 16.9MB   213
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     3.08%     346MiB / 31.36GiB     1.08%     12MB / 957kB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     5.64%     354.9MiB / 31.36GiB   1.11%     11.7MB / 766kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     3.65%     365MiB / 31.36GiB     1.14%     12.3MB / 911kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   179.63%   1.239GiB / 31.36GiB   3.95%     874MB / 3.03MB   24.6kB / 17.5MB   197
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     22.50%    348.3MiB / 31.36GiB   1.08%     12MB / 965kB      0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     8.68%     355MiB / 31.36GiB     1.11%     11.7MB / 773kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.90%     365.3MiB / 31.36GiB   1.14%     12.3MB / 919kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   136.00%   1.245GiB / 31.36GiB   3.97%     1.08GB / 3.44MB   24.6kB / 17.5MB   197
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.38%     365.9MiB / 31.36GiB   1.14%     12MB / 969kB      0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     3.55%     355.1MiB / 31.36GiB   1.11%     11.7MB / 777kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.20%     365.5MiB / 31.36GiB   1.14%     12.3MB / 923kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   121.31%   1.248GiB / 31.36GiB   3.98%     1.21GB / 3.75MB   24.6kB / 17.5MB   197
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     20.22%    347.9MiB / 31.36GiB   1.08%     12MB / 977kB      0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.17%     355.1MiB / 31.36GiB   1.11%     11.7MB / 781kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     2.24%     365.7MiB / 31.36GiB   1.14%     12.3MB / 931kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   121.59%   1.253GiB / 31.36GiB   4.00%     1.38GB / 4.11MB   24.6kB / 17.5MB   197
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.49%     348.2MiB / 31.36GiB   1.08%     12MB / 981kB      0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.87%     355.5MiB / 31.36GiB   1.11%     11.7MB / 789kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.11%     365.9MiB / 31.36GiB   1.14%     12.3MB / 935kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   118.99%   1.258GiB / 31.36GiB   4.01%     1.56GB / 4.51MB   24.6kB / 17.5MB   197
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O          BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     10.07%    348.2MiB / 31.36GiB   1.08%     12MB / 989kB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     4.18%     355.5MiB / 31.36GiB   1.11%     11.7MB / 797kB   0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.65%     366.2MiB / 31.36GiB   1.14%     12.3MB / 943kB   0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   292.41%   1.272GiB / 31.36GiB   4.06%     1.7GB / 4.79MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.15%     348.2MiB / 31.36GiB   1.08%     12MB / 993kB      0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     6.40%     355.5MiB / 31.36GiB   1.11%     11.7MB / 801kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     1.28%     366.6MiB / 31.36GiB   1.14%     12.3MB / 948kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   256.63%   1.289GiB / 31.36GiB   4.11%     1.79GB / 4.98MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.07%     348.6MiB / 31.36GiB   1.09%     12MB / 1MB        0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     7.42%     355.6MiB / 31.36GiB   1.11%     11.7MB / 808kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     3.87%     366.6MiB / 31.36GiB   1.14%     12.3MB / 954kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   290.98%   1.304GiB / 31.36GiB   4.16%     1.83GB / 5.07MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     3.27%     348.7MiB / 31.36GiB   1.09%     12MB / 1.01MB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.18%     355.6MiB / 31.36GiB   1.11%     11.7MB / 812kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     0.99%     366.8MiB / 31.36GiB   1.14%     12.3MB / 958kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   260.51%   1.316GiB / 31.36GiB   4.20%     1.86GB / 5.14MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.55%     349.1MiB / 31.36GiB   1.09%     12MB / 1.01MB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     6.07%     355.8MiB / 31.36GiB   1.11%     11.8MB / 820kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     2.64%     367.1MiB / 31.36GiB   1.14%     12.3MB / 966kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   294.15%   1.327GiB / 31.36GiB   4.23%     1.94GB / 5.29MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.47%     349.4MiB / 31.36GiB   1.09%     12MB / 1.02MB     0B / 5.73MB       129
+d090d2a7b13e   nextflowwithdockercluster_node_3     3.03%     355.8MiB / 31.36GiB   1.11%     11.8MB / 828kB    0B / 10.5MB       125
+4fa31889f438   nextflowwithdockercluster_node_1     3.39%     367.4MiB / 31.36GiB   1.14%     12.4MB / 974kB    0B / 2.74MB       123
+e29b5ed93aa7   nextflowwithdockercluster_client_1   310.43%   1.352GiB / 31.36GiB   4.31%     2.03GB / 5.46MB   24.6kB / 17.5MB   224
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.12%     349.5MiB / 31.36GiB   1.09%     12MB / 1.03MB     0B / 5.73MB       128
+d090d2a7b13e   nextflowwithdockercluster_node_3     0.98%     355.6MiB / 31.36GiB   1.11%     11.8MB / 832kB    0B / 10.5MB       123
+4fa31889f438   nextflowwithdockercluster_node_1     0.91%     367.3MiB / 31.36GiB   1.14%     12.4MB / 978kB    0B / 2.74MB       120
+e29b5ed93aa7   nextflowwithdockercluster_client_1   402.90%   1.363GiB / 31.36GiB   4.35%     2.03GB / 5.47MB   24.6kB / 17.5MB   221
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     9.02%     348.7MiB / 31.36GiB   1.09%     12MB / 1.03MB     0B / 5.73MB       125
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.20%     355.3MiB / 31.36GiB   1.11%     11.8MB / 840kB    0B / 10.5MB       120
+4fa31889f438   nextflowwithdockercluster_node_1     1.36%     367.2MiB / 31.36GiB   1.14%     12.4MB / 986kB    0B / 2.74MB       117
+e29b5ed93aa7   nextflowwithdockercluster_client_1   415.72%   1.382GiB / 31.36GiB   4.41%     2.03GB / 5.47MB   24.6kB / 17.5MB   220
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.04%     347.8MiB / 31.36GiB   1.08%     12MB / 1.04MB     0B / 5.73MB       119
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.11%     354.1MiB / 31.36GiB   1.10%     11.8MB / 844kB    0B / 10.5MB       112
+4fa31889f438   nextflowwithdockercluster_node_1     6.20%     366.2MiB / 31.36GiB   1.14%     12.4MB / 990kB    0B / 2.74MB       111
+e29b5ed93aa7   nextflowwithdockercluster_client_1   385.96%   1.415GiB / 31.36GiB   4.51%     2.03GB / 5.48MB   24.6kB / 17.5MB   212
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.35%     347.6MiB / 31.36GiB   1.08%     12MB / 1.05MB     0B / 5.73MB       115
+d090d2a7b13e   nextflowwithdockercluster_node_3     0.95%     354MiB / 31.36GiB     1.10%     11.8MB / 849kB    0B / 10.5MB       111
+4fa31889f438   nextflowwithdockercluster_node_1     1.54%     365.7MiB / 31.36GiB   1.14%     12.4MB / 998kB    0B / 2.74MB       110
+e29b5ed93aa7   nextflowwithdockercluster_client_1   408.10%   1.458GiB / 31.36GiB   4.65%     2.03GB / 5.49MB   24.6kB / 17.5MB   202
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     0.89%     347.8MiB / 31.36GiB   1.08%     12.1MB / 1.05MB   0B / 5.73MB       115
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.17%     354MiB / 31.36GiB     1.10%     11.8MB / 857kB    0B / 10.5MB       111
+4fa31889f438   nextflowwithdockercluster_node_1     1.20%     365.8MiB / 31.36GiB   1.14%     12.4MB / 1MB      0B / 2.74MB       110
+e29b5ed93aa7   nextflowwithdockercluster_client_1   432.69%   1.489GiB / 31.36GiB   4.75%     2.03GB / 5.49MB   24.6kB / 17.5MB   202
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.68%     348.7MiB / 31.36GiB   1.09%     12.1MB / 1.08MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.88%     354MiB / 31.36GiB     1.10%     11.8MB / 864kB    0B / 10.5MB       111
+4fa31889f438   nextflowwithdockercluster_node_1     4.04%     366.6MiB / 31.36GiB   1.14%     12.4MB / 1.02MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   445.96%   1.527GiB / 31.36GiB   4.87%     2.03GB / 5.52MB   24.6kB / 17.5MB   205
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.95%     348.9MiB / 31.36GiB   1.09%     12.1MB / 1.08MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.72%     354.2MiB / 31.36GiB   1.10%     11.8MB / 891kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.72%     366.9MiB / 31.36GiB   1.14%     12.4MB / 1.03MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   411.34%   1.539GiB / 31.36GiB   4.91%     2.03GB / 5.52MB   24.6kB / 17.5MB   205
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.42%     349.4MiB / 31.36GiB   1.09%     12.1MB / 1.1MB    0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     5.36%     354.2MiB / 31.36GiB   1.10%     11.8MB / 904kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     11.02%    367.3MiB / 31.36GiB   1.14%     12.4MB / 1.04MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   385.02%   1.554GiB / 31.36GiB   4.95%     2.03GB / 5.53MB   24.6kB / 17.5MB   205
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.29%     349.6MiB / 31.36GiB   1.09%     12.1MB / 1.11MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.07%     354.2MiB / 31.36GiB   1.10%     11.8MB / 908kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     0.95%     367.5MiB / 31.36GiB   1.14%     12.4MB / 1.05MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   356.11%   1.583GiB / 31.36GiB   5.05%     2.03GB / 5.55MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.05%     350.1MiB / 31.36GiB   1.09%     12.1MB / 1.11MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.15%     354.3MiB / 31.36GiB   1.10%     11.8MB / 916kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     74.94%    372.8MiB / 31.36GiB   1.16%     12.4MB / 1.06MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   345.75%   1.596GiB / 31.36GiB   5.09%     2.03GB / 5.56MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     2.17%     350.4MiB / 31.36GiB   1.09%     12.1MB / 1.12MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.28%     354.3MiB / 31.36GiB   1.10%     11.9MB / 924kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.74%     368.1MiB / 31.36GiB   1.15%     12.4MB / 1.06MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   372.06%   1.62GiB / 31.36GiB    5.17%     2.03GB / 5.56MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.40%     350.6MiB / 31.36GiB   1.09%     12.1MB / 1.13MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.17%     354.3MiB / 31.36GiB   1.10%     11.9MB / 929kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.55%     368.4MiB / 31.36GiB   1.15%     12.5MB / 1.07MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   405.15%   1.644GiB / 31.36GiB   5.24%     2.03GB / 5.57MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     0.85%     350.9MiB / 31.36GiB   1.09%     12.1MB / 1.13MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.28%     354.3MiB / 31.36GiB   1.10%     11.9MB / 935kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.34%     368.6MiB / 31.36GiB   1.15%     12.5MB / 1.08MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   407.57%   1.663GiB / 31.36GiB   5.30%     2.03GB / 5.57MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.48%     351.1MiB / 31.36GiB   1.09%     12.1MB / 1.14MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.56%     354.3MiB / 31.36GiB   1.10%     11.9MB / 943kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.24%     368.8MiB / 31.36GiB   1.15%     12.5MB / 1.08MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   410.36%   1.695GiB / 31.36GiB   5.40%     2.03GB / 5.58MB   24.6kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     0.96%     351.3MiB / 31.36GiB   1.09%     12.1MB / 1.14MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     0.97%     354.3MiB / 31.36GiB   1.10%     11.9MB / 947kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.88%     368.9MiB / 31.36GiB   1.15%     12.5MB / 1.09MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   381.83%   1.738GiB / 31.36GiB   5.54%     2.03GB / 5.59MB   28.7kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.14%     351.7MiB / 31.36GiB   1.10%     12.2MB / 1.15MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.16%     354.4MiB / 31.36GiB   1.10%     11.9MB / 954kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     7.95%     369.2MiB / 31.36GiB   1.15%     12.5MB / 1.1MB    0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   249.01%   1.776GiB / 31.36GiB   5.66%     2.03GB / 5.59MB   45.1kB / 17.5MB   206
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.26%     351.9MiB / 31.36GiB   1.10%     12.2MB / 1.16MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.21%     354.3MiB / 31.36GiB   1.10%     11.9MB / 959kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.48%     369.3MiB / 31.36GiB   1.15%     12.5MB / 1.1MB    0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   284.02%   1.666GiB / 31.36GiB   5.31%     2.03GB / 5.6MB    94.2kB / 30.1MB   176
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O         PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.89%     352MiB / 31.36GiB     1.10%     12.2MB / 1.16MB   0B / 5.73MB       117
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.03%     354.5MiB / 31.36GiB   1.10%     11.9MB / 966kB    0B / 10.5MB       113
+4fa31889f438   nextflowwithdockercluster_node_1     1.48%     369.7MiB / 31.36GiB   1.15%     12.5MB / 1.11MB   0B / 2.74MB       112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   8.54%     1.66GiB / 31.36GiB    5.29%     2.03GB / 5.61MB   94.2kB / 30.2MB   176
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     1.17%     352.3MiB / 31.36GiB   1.10%     12.2MB / 1.17MB   0B / 5.73MB      117
+d090d2a7b13e   nextflowwithdockercluster_node_3     2.14%     354.4MiB / 31.36GiB   1.10%     11.9MB / 974kB    0B / 10.5MB      113
+4fa31889f438   nextflowwithdockercluster_node_1     2.67%     369.7MiB / 31.36GiB   1.15%     12.5MB / 1.11MB   0B / 2.74MB      112
+e29b5ed93aa7   nextflowwithdockercluster_client_1   341.24%   1.7GiB / 31.36GiB     5.42%     2.03GB / 5.61MB   94.2kB / 158MB   215
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O        PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     78.98%    368.4MiB / 31.36GiB   1.15%     12.2MB / 1.18MB   0B / 5.73MB      121
+d090d2a7b13e   nextflowwithdockercluster_node_3     1.68%     355.6MiB / 31.36GiB   1.11%     11.9MB / 984kB    0B / 10.5MB      118
+4fa31889f438   nextflowwithdockercluster_node_1     16.68%    393.8MiB / 31.36GiB   1.23%     12.5MB / 1.14MB   0B / 2.74MB      118
+e29b5ed93aa7   nextflowwithdockercluster_client_1   199.20%   1.641GiB / 31.36GiB   5.23%     2.03GB / 5.61MB   94.2kB / 159MB   83
+
+CONTAINER ID   NAME                                 CPU %     MEM USAGE / LIMIT     MEM %     NET I/O           BLOCK I/O       PIDS
+e8258e3f79ff   nextflowwithdockercluster_node_2     4.67%     369.6MiB / 31.36GiB   1.15%     12.2MB / 1.19MB   0B / 5.73MB     123
+d090d2a7b13e   nextflowwithdockercluster_node_3     7.01%     355.6MiB / 31.36GiB   1.11%     11.9MB / 991kB    0B / 10.5MB     119
+4fa31889f438   nextflowwithdockercluster_node_1     11.37%    393.7MiB / 31.36GiB   1.23%     12.5MB / 1.15MB   0B / 2.74MB     118
+e29b5ed93aa7   nextflowwithdockercluster_client_1   3.69%     540.5MiB / 31.36GiB   1.68%     2.03GB / 5.62MB   111kB / 159MB   41
+
